@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="FIST ACTION" />
+  <HelloWorld msg="Three Times" />
 </template>
 
 <script setup>

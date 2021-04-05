@@ -16,5 +16,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         REPOSITORY_NAME: Baiyusoup/Baiyusoup.github.io
         BRANCH: master
-        FOLDER: build
+        FOLDER: dist
         BUILD_SCRIPT: npm install && npm run build
