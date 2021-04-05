@@ -16,9 +16,11 @@ jobs:
         npm install
         npm run-script build
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        REPOSITORY_NAME: Baiyusoup/Baiyusoup.github.io
-        BRANCH: master
-        FOLDER: dist
+      uses: easingthemes/ssh-deploy@v2.0.7
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_TOKEN }}
+          ARGS: "-avz --delete"
+          SOURCE: "public"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.TARGET }}
