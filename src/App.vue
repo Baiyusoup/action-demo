@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Three Times" />
+  <HelloWorld msg="第四次" />
 </template>
 
 <script setup>
